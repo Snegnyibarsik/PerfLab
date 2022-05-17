@@ -39,7 +39,6 @@ public class Steps {
 			}else {System.out.println(Math.abs(stepMinus));
 		}
 	
-
 	}
 
 }
