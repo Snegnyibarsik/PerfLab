@@ -6,13 +6,14 @@ import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Scanner;
-
+// добавить проверки на ошибки
 public class Steps {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws Exception{
 		List <Integer> nums = new ArrayList<Integer>();
-		Scanner sc = new Scanner(new File(args[0]));
 		
+		Scanner sc = new Scanner(new File(args[0]));
+				
 		do {
 		nums.add(sc.nextInt());
 		} while (sc.hasNext());
@@ -38,6 +39,7 @@ public class Steps {
 			System.out.println(stepPlus);
 			}else {System.out.println(Math.abs(stepMinus));
 		}
+		
 	
 	}
 
